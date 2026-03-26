@@ -1,0 +1,44 @@
+data:
+  mask_rate: 0.08
+  min_observed_ratio: 0.5
+  normalize: zscore
+  stride: 16
+  test_ratio: 0.2
+  timestamp_col: timestamp
+  val_ratio: 0.2
+  window_size: 32
+device: cuda
+graph:
+  cross_threshold: 0.1
+  global_threshold: 0.1
+  include_self_loops: true
+  local_threshold: 0.15
+  top_k_global: 3
+logging:
+  plot_history: true
+loss:
+  l2_weight: 1.0e-05
+  recon_weight: 1.0
+  soft_sharing_weight: 0.001
+  spatial_weight: 1.0
+  temporal_weight: 1.0
+model:
+  brownian_std: 0.05
+  dropout: 0.1
+  gat_hidden_dim: 64
+  graph_layers: 2
+  hidden_decay: 0.1
+  hidden_dim: 64
+  num_heads: 8
+  output_dim: 1
+  temporal_layers: 2
+  use_layernorm: true
+seed: 42
+train:
+  batch_size: 32
+  epochs: 2
+  grad_clip: 1.0
+  lr: 0.0001
+  num_workers: 0
+  patience: 2
+  weight_decay: 1.0e-05

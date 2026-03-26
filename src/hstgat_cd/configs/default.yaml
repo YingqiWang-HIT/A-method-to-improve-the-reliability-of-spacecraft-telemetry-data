@@ -1,0 +1,50 @@
+seed: 42
+device: cuda
+
+data:
+  window_size: 64
+  stride: 16
+  val_ratio: 0.2
+  test_ratio: 0.2
+  normalize: zscore
+  mask_rate: 0.08
+  min_observed_ratio: 0.5
+  timestamp_col: timestamp
+
+model:
+  hidden_dim: 64
+  temporal_layers: 2
+  output_dim: 1
+  num_heads: 8
+  gat_hidden_dim: 64
+  graph_layers: 2
+  dropout: 0.1
+  brownian_std: 0.05
+  hidden_decay: 0.1
+  use_layernorm: true
+
+graph:
+  local_threshold: 0.15
+  global_threshold: 0.10
+  cross_threshold: 0.10
+  top_k_global: 3
+  include_self_loops: true
+
+loss:
+  recon_weight: 1.0
+  temporal_weight: 1.0
+  spatial_weight: 1.0
+  soft_sharing_weight: 0.001
+  l2_weight: 0.00001
+
+train:
+  epochs: 100
+  batch_size: 32
+  lr: 0.0001
+  weight_decay: 0.00001
+  patience: 20
+  grad_clip: 1.0
+  num_workers: 0
+
+logging:
+  plot_history: true
