@@ -224,3 +224,16 @@ If you use this code, dataset processing pipeline, or model implementation in yo
   doi = {10.1016/j.ress.2026.112868},
   url = {https://www.sciencedirect.com/science/article/pii/S0951832026006794}
 }
+@article{wang2025pian,
+  title = {PIAN: A Physics-informed Assimilation Neural Network for Temporal Super-resolution Reconstruction of Sensor Data in Satellite Attitude Control System},
+  author = {Wang, Yingqi and Song, Yuchen and Liu, Datong},
+  journal = {Advanced Engineering Informatics},
+  volume = {68},
+  number = {Part C},
+  pages = {103805},
+  year = {2025},
+  issn = {1474-0346},
+  doi = {10.1016/j.aei.2025.103805},
+  url = {https://www.sciencedirect.com/science/article/pii/S1474034625006986}
+}
+```
