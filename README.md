@@ -199,3 +199,28 @@ Training produces:
 - `train_history.csv`
 - `metrics.json`
 - `plots/loss_curve.png`
+
+如果想更完整一点，可以写成：
+
+## Citation
+
+This code is released to support the following paper:
+
+> Yingqi Wang, Shengwei Meng, Yuchen Song, Datong Liu,  
+> **CSIR-Net: A Continuous Spatio-temporal Information Redundancy Network Based on Structural Priors for Satellite Telemetry Data Reliability Enhancement**,  
+> *Reliability Engineering & System Safety*, 2026, 112868.  
+> DOI: https://doi.org/10.1016/j.ress.2026.112868
+
+If you use this code, dataset processing pipeline, or model implementation in your work, please cite:
+
+```bibtex
+@article{wang2026csirnet,
+  title = {CSIR-Net: A Continuous Spatio-temporal Information Redundancy Network Based on Structural Priors for Satellite Telemetry Data Reliability Enhancement},
+  author = {Wang, Yingqi and Meng, Shengwei and Song, Yuchen and Liu, Datong},
+  journal = {Reliability Engineering \& System Safety},
+  year = {2026},
+  pages = {112868},
+  issn = {0951-8320},
+  doi = {10.1016/j.ress.2026.112868},
+  url = {https://www.sciencedirect.com/science/article/pii/S0951832026006794}
+}
