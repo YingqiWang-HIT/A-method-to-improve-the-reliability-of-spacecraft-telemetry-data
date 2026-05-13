@@ -200,8 +200,6 @@ Training produces:
 - `metrics.json`
 - `plots/loss_curve.png`
 
-如果想更完整一点，可以写成：
-
 ## Citation
 
 This code is released to support the following paper:
