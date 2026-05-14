@@ -1,6 +1,6 @@
 # CSIR-Net: A Continuous Spatio-temporal Information Redundancy Network Based on Structural Priors for Satellite Telemetry Data Reliability Enhancement
 
-This repository provides a PyTorch-based HSTGAT-CD reference implementation for recovering irregular spacecraft telemetry data. This implementation is based on a journal paper still under review. The paper describes three main components: a **VLSTM-SDE** temporal recovery module with continuous-time dynamics and stochastic perturbation, a **hierarchical graph attention** module using local/global/cross-subsystem graphs, and a **soft-hard parameter sharing** optimization strategy. The manuscript also reports a 6:2:2 split, Adam with learning rate 1e-4, 1000 epochs, early stopping patience 80, and 8 attention heads in HiGAT. 
+This repository provides a PyTorch-based SIR-Net reference implementation for recovering irregular spacecraft telemetry data. This implementation is based on a journal paper still under review. The paper describes three main components: a **VLSTM-SDE** temporal recovery module with continuous-time dynamics and stochastic perturbation, a **hierarchical graph attention** module using local/global/cross-subsystem graphs, and a **soft-hard parameter sharing** optimization strategy. The manuscript also reports a 6:2:2 split, Adam with learning rate 1e-4, 1000 epochs, early stopping patience 80, and 8 attention heads in HiGAT. 
 
 ## Important note
 
